@@ -1,0 +1,51 @@
+$red: #eb235f;
+$focus: #8282fd;
+
+.fromControl {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+
+  label {
+    display: block;
+    color: #646464;
+    margin-bottom: 3px;
+  }
+
+  .boxInput {
+    position: relative;
+    cursor: pointer;
+
+    .visiblePassword {
+      top: 4px;
+      position: absolute;
+      right: 10px;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 2px 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+  }
+
+  input:focus {
+    box-shadow: 0px 0px 2px 0px $focus;
+    border: 1px solid $focus;
+  }
+
+  &.error {
+    input {
+      box-shadow: 0px 0px 2px 0px $red;
+      border: 1px solid $red;
+    }
+
+    .errorSpan {
+      color: $red;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+}

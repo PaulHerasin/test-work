@@ -1,0 +1,18 @@
+.Header {
+  padding: 15px 0;
+  height: 70px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+}
+
+.Menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Login {
+  display: flex;
+  align-items: center;
+}
